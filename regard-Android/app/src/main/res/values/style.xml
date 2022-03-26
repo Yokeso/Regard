@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StyleHomeBtn">
+        <item name="android:background">@color/Blue</item>
+        <item name="android:text">@string/StringMovie</item>
+        <item name="android:layout_weight">40</item>
+        <item name="android:layout_height">40dp</item>
+
+    </style>
+
+
+</resources>

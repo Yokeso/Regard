@@ -1,3 +1,12 @@
 <resources>
+    <!--主页相关string-->
     <string name="app_name">Regard</string>
+    <string name="StringMovie">共同观影</string>
+    <string name="StringMemoy">共同回忆</string>
+    <string name="StringWhere">你在干嘛</string>
+    <string name="StringBill">账单管理</string>
+    <string name="StringCloud">情侣云盘</string>
+    <string name="StringAnn">爱的纪念</string>
+
+    <!---->
 </resources>
