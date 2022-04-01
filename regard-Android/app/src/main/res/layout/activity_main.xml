@@ -7,52 +7,135 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="50dp">
 
-    <Button
-        android:id="@+id/RegardBtnMovie"
-        style="@style/StyleMovie"
-        android:layout_width="92dp"
-        android:layout_height="70dp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="250dp" />
 
-    <Button
-        android:id="@+id/RegardBtnMemory"
+    <!--Btn pos-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/RegardBtnGuideLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="276dp" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+    <!--Movie btn & text-->
+    <Button
+        android:id="@+id/RegardMovieBtn"
+        style="@style/StyleBtn.StyleMovie"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/RegardBtnGuideLine"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/RegardMovietext"
+        style="@style/StyleText.StyleMovieText"
+        app:layout_constraintStart_toStartOf="@id/RegardMovieBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardMovieBtn"/>
+
+    <!--Memory btn & text-->
+    <Button
+        android:id="@+id/RegardMemoryBtn"
+        style="@style/StyleBtn.StyleMemory"
+
+        app:layout_constraintStart_toStartOf="@id/RegardMovieBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardMovieBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/RegardMemorytext"
+        style="@style/StyleText.StyleMemoryText"
+        app:layout_constraintStart_toStartOf="@id/RegardMemoryBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardMemoryBtn"/>
+
+    <!--Where btn & text-->
+    <Button
+        android:id="@+id/RegardWhereBtn"
+        style="@style/StyleBtn.StyleWhere"
+
+        app:layout_constraintStart_toStartOf="@id/RegardMemoryBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardMemoryBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/RegardWheretext"
+        style="@style/StyleText.StyleWhereText"
+        app:layout_constraintStart_toStartOf="@id/RegardWhereBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardWhereBtn"/>
+
+    <!--Cloud btn & text-->
+    <Button
+        android:id="@+id/RegardCloudBtn"
+        style="@style/StyleBtn.StyleCloud"
+
+        app:layout_constraintStart_toStartOf="@id/RegardMovieBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardMovieBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/RegardCloudtext"
+        style="@style/StyleText.StyleCloudText"
+        app:layout_constraintStart_toStartOf="@id/RegardCloudBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardCloudBtn"/>
+
+    <!--Bill btn & text-->
+    <Button
+        android:id="@+id/RegardBillBtn"
+        style="@style/StyleBtn.StyleBill"
+
+        app:layout_constraintStart_toStartOf="@id/RegardMemoryBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardMemoryBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/RegardBilltext"
+        style="@style/StyleText.StyleBillText"
+        app:layout_constraintStart_toStartOf="@id/RegardBillBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardBillBtn"/>
+
+    <!--Ann btn & text-->
+    <Button
+        android:id="@+id/RegardAnnBtn"
+        style="@style/StyleBtn.StyleAnn"
+
+        app:layout_constraintStart_toStartOf="@id/RegardWhereBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardWhereBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/RegardAnntext"
+        style="@style/StyleText.StyleAnnText"
+        app:layout_constraintStart_toStartOf="@id/RegardAnnBtn"
+        app:layout_constraintTop_toTopOf="@id/RegardAnnBtn"/>
+
+    <!--topview-->
+    <ImageView
+        android:id="@+id/RegardTitleView"
+        style="@style/StyleTitle"
+        app:srcCompat="@drawable/regard_static"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!--Barriers-->
+    <Button
+        android:id="@+id/RegardBarrierTop"
+        style="@style/StyleBarrier.StyleBarrierTop"
+        app:layout_constraintBottom_toTopOf="@id/RegardMovieBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/RegardBtnWhere"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="290dp"
-        tools:layout_editor_absoluteY="280dp" />
+        android:id="@+id/RegardBarrierBottom"
+        style="@style/StyleBarrier.StyleBarrierBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegardCloudtext"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/RegardBtnCloud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="351dp" />
+    <TextView
+        android:id="@+id/RegardTimer"
+        style="@style/StyleTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegardTitleView" />
 
-    <Button
-        android:id="@+id/RegardBtnBill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="352dp" />
 
-    <Button
-        android:id="@+id/RegardBtnAnn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="354dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

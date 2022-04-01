@@ -1,12 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="StyleHomeBtn">
-        <item name="android:background">@color/Blue</item>
-        <item name="android:text">@string/StringMovie</item>
-        <item name="android:layout_weight">40</item>
-        <item name="android:layout_height">40dp</item>
-
+    <style name="StyleBtn">
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_height">@dimen/RegardBtnHeight</item>
+        <item name="android:layout_width">@dimen/RegardBtnWidth</item>
     </style>
 
+    <style name="StyleText">
+        <item name="android:textColor">@color/TextGray</item>
+        <item name="android:textSize">@dimen/RegardTextSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/RegardBtnWidth</item>
+        <item name="android:layout_height">@dimen/RegardTextHeight</item>
+        <item name="android:layout_marginStart">@dimen/RegardDisBtn2Text</item>
+        <item name="android:layout_marginTop">@dimen/RegardBtnHeight</item>
+    </style>
+
+    <!--Title View-->
+    <style name="StyleTitle">
+        <item name="android:paddingTop">@dimen/RegardTitlePaddingTop</item>
+        <item name="android:layout_marginTop">@dimen/RegardTitleMarginTop</item>
+        <item name="android:layout_marginStart">@dimen/RegardTitleMarginStart</item>
+        <item name="android:layout_width">@dimen/RegardTitleWidth</item>
+        <item name="android:layout_height">@dimen/RegardTitleHeight</item>
+    </style>
+
+    <!--Movie btn & text-->
+    <style name="StyleBtn.StyleMovie">
+        <item name="android:background">@drawable/regardmovie</item>
+        <item name="android:layout_marginStart">@dimen/RegardMarginStart</item>
+        <item name="android:layout_marginTop">@dimen/RegardBtnAlign</item>
+        <item name="android:paddingTop">@dimen/RegardBtnPaddingTop</item>
+    </style>
+    <style name="StyleText.StyleMovieText">
+        <item name="android:text">@string/StringMovie</item>
+    </style>
+
+    <!--Memory btn & text-->
+    <style name="StyleBtn.StyleMemory">
+        <item name="android:background">@drawable/regardmemory</item>
+        <item name="android:layout_marginStart">@dimen/RegardWidthBtn2Btn</item>
+        <item name="android:layout_marginTop">@dimen/RegardBtnAlign</item>
+        <item name="android:paddingTop">@dimen/RegardBtnPaddingTop</item>
+    </style>
+    <style name="StyleText.StyleMemoryText">
+        <item name="android:text">@string/StringMemoy</item>
+    </style>
+
+    <!--Where btn & text-->
+    <style name="StyleBtn.StyleWhere">
+        <item name="android:background">@drawable/regardwhere</item>
+        <item name="android:layout_marginStart">@dimen/RegardWidthBtn2Btn</item>
+        <item name="android:layout_marginTop">@dimen/RegardBtnAlign</item>
+        <item name="android:paddingTop">@dimen/RegardBtnPaddingTop</item>
+    </style>
+    <style name="StyleText.StyleWhereText">
+        <item name="android:text">@string/StringWhere</item>
+    </style>
+
+    <!--Cloud btn & text-->
+    <style name="StyleBtn.StyleCloud">
+        <item name="android:background">@drawable/regarddoc</item>
+        <item name="android:layout_marginStart">@dimen/RegardBtnAlign</item>
+        <item name="android:layout_marginTop">@dimen/RegardHeightBtn2Btn</item>
+        <item name="android:paddingTop">@dimen/RegardBtnPaddingTop</item>
+    </style>
+    <style name="StyleText.StyleCloudText">
+        <item name="android:text">@string/StringCloud</item>
+    </style>
+
+    <!--Bill btn & text-->
+    <style name="StyleBtn.StyleBill">
+        <item name="android:background">@drawable/regardbill</item>
+        <item name="android:layout_marginStart">@dimen/RegardBtnAlign</item>
+        <item name="android:layout_marginTop">@dimen/RegardHeightBtn2Btn</item>
+        <item name="android:paddingTop">@dimen/RegardBtnPaddingTop</item>
+    </style>
+    <style name="StyleText.StyleBillText">
+        <item name="android:text">@string/StringBill</item>
+    </style>
+
+    <!--Ann btn & text-->
+    <style name="StyleBtn.StyleAnn">
+        <item name="android:background">@drawable/regardann</item>
+        <item name="android:layout_marginStart">@dimen/RegardBtnAlign</item>
+        <item name="android:layout_marginTop">@dimen/RegardHeightBtn2Btn</item>
+        <item name="android:paddingTop">@dimen/RegardBtnPaddingTop</item>
+    </style>
+    <style name="StyleText.StyleAnnText">
+        <item name="android:text">@string/StringAnn</item>
+    </style>
+
+    <!--Barrier-->
+    <style name="StyleBarrier">
+        <item name="android:layout_height">@dimen/RegardBarrierHeight</item>
+        <item name="android:layout_width">@dimen/RegardBarrierWidth</item>
+        <item name="android:background">@color/White</item>
+        <item name="android:layout_marginStart">@dimen/RegardBarrierDisStart</item>
+    </style>
+
+    <style name="StyleBarrier.StyleBarrierTop">
+        <item name="android:layout_marginBottom">@dimen/RegardBarrierDisTop</item>
+    </style>
+
+    <style name="StyleBarrier.StyleBarrierBottom">
+        <item name="android:layout_marginTop">@dimen/RegardBarrierDisBottom</item>
+    </style>
+
+    <!--Timer-->
+    <style name="StyleTimer">
+        <item name="android:layout_height">@dimen/RegardTimerHeight</item>
+        <item name="android:layout_width">@dimen/RegardTimerWidth</item>
+        <item name="android:layout_marginStart">@dimen/RegardTimerDisStart</item>
+        <item name="android:layout_marginTop">@dimen/RegardTimerDisTop</item>
+        <item name="android:gravity">center</item>
+        <!--内容设置-->
+        <item name="android:text">@string/StringTimerDefault</item>
+        <item name="android:textColor">@color/PinkLight</item>
+        <item name="android:textSize">@dimen/RegardTimerTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">@drawable/regardtimer</item>
+    </style>
 
 </resources>

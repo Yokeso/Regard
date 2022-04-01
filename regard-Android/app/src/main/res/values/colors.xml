@@ -2,6 +2,7 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>  
     <color name="Pink">#F5C5DB</color>
+    <color name="PinkLight">#D443E2</color>
     <color name="Blue">#D1E7FE</color>
     <color name="PurpleLight">#C4D0FB</color>
     <color name="PurpleDark">#343DC1</color>
@@ -9,4 +10,6 @@
     <color name="Yellow"> #F4F8A3</color>
     <color name="Red">#DC1B1B</color>
     <color name="Gray">#8A8989</color>
+    <color name="TextGray">#333333</color>
+    <color name="White">#FAFAFA</color>
 </resources>

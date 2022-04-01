@@ -8,5 +8,8 @@
     <string name="StringCloud">情侣云盘</string>
     <string name="StringAnn">爱的纪念</string>
 
+    <string name="StringTimerDefault">尚未设置纪念日</string>
+
+
     <!---->
 </resources>

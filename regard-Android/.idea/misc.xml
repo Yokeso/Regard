@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.255" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.255" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regardann.xml" value="0.242" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regardbill.xml" value="0.242" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regarddoc.xml" value="0.242" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regardmemory.xml" value="0.242" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regardmovie.xml" value="0.255" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regardtimer.xml" value="0.205" />
+        <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/drawable/regardwhere.xml" value="0.242" />
         <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/layout/activity_display_message.xml" value="0.4" />
         <entry key="..\:/Programs/regard/regard-Android/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
